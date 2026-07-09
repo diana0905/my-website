@@ -42,8 +42,8 @@ const colorsFg = ['#FFB689', '#FFF390', '#9DD9F9'];
     const radius = 150;
     const blurSize = 10;
 
-    const firstCanvas = await Assets.load('src/assets/img/mesh-373.png');
-    const secondCanvas = await Assets.load('src/assets/img/mesh-37.png');
+    const firstCanvas = await Assets.load(`${import.meta.env.BASE_URL}assets/img/mesh-373.png`);
+    const secondCanvas = await Assets.load(`${import.meta.env.BASE_URL}assets/img/mesh-37.png`);    
 
     const some_bg = new Sprite(firstCanvas);
     some_bg.width = app.screen.width;

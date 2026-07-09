@@ -8,29 +8,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/gsap.css" />
   </head>
   <body>
-    <main class="page">
-      <script type="module" src="/src/main.js"></script>
-      <canvas class="frontpage__backdrop" style="touch-action: none; cursor: inherit;"></canvas>
-      <div class="page-front">
-        <h1 class="name">diana amirova</h1>
+  <div class="custom-cursor" id="customCursor"></div>
 
-        <div class="frontpage__footer">
+  <script type="module" src="/src/gsap-test.js"></script>
+  <div class="page-front">
+    <h1 class="name">diana amirova</h1>
+
+    <div class="frontpage__footer">
           <p>Full-stack developer <br> based in Munich, Germany</p>
 
           <div id="contact">
             <ul class="contact">
+              <li class="mail-icon">
+                <a href="mailto:infos@diana-amirova.com?subject=Hello!">
+                  <svg viewBox="0 0 24 24">
+                    <use xlink:href="/src/assets/icons.svg#mail"></use>
+                  </svg>
+                </a>
+              </li>
               <li class="contact__item">
-                <a href="https://www.linkedin.com/in/diana-amirova-463124163/" target="_blank">
+                <a href="https://www.linkedin.com/in/diana-amirova-463124163/" target="_blank" rel="noopener noreferrer">
                   <svg>
                     <use xlink:href="/src/assets/icons.svg#linkedin"></use>
                   </svg>
                 </a>
               </li>
-              <li class="contact__item">
-                <a href="https://www.github.com/" target="_blank">
+              <li class="github-icon">
+                <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer">
                   <svg>
                     <use xlink:href="/src/assets/icons.svg#github"></use>
                   </svg>
@@ -38,9 +45,7 @@
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-    </main>
-    
+    </div>
+  </div>  
   </body>
 </html>
